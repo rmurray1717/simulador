@@ -3,6 +3,11 @@
   "version": "1",
   "description": "Simulador de credito",
   "main": "index.js",
+   
+  "engines": {
+      "node": "17.4.0"
+    },
+   
   "scripts": {
     "build": "webpack  --mode production --progress --config webpack-prod.js",
     "dev": "webpack --mode development --progress --config webpack-dev.js",
@@ -61,4 +66,7 @@
     "webpack-cli": "^4.9.0",
     "webpack-dev-server": "^4.3.1"
   }
+ 
 }
+
+
