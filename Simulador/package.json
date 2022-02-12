@@ -4,9 +4,7 @@
   "description": "Simulador de credito",
   "main": "index.js",
    
-  "engines": {
-      "node": "16.x"
-    },
+  
    
   "scripts": {
     "build": "webpack  --mode production --progress --config webpack-prod.js",
