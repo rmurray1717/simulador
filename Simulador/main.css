@@ -2,6 +2,110 @@
   !*** css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-2[0].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2[0].rules[0].use[2]!./Styles/main.scss ***!
   \***********************************************************************************************************************************************************************************/
 @import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-2[0].rules[0].use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2[0].rules[0].use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./src/pages/Principal.vue?vue&type=style&index=0&lang=scss& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.img {
+  width: 350px;
+  height: 135px;
+}
+h2 {
+  font-family: "Montserrat";
+  color: #fff;
+  background-color: #e73130;
+}
+th {
+  font-family: "Montserrat";
+  font-size: 18px;
+}
+
+/* estilo de boton */
+.wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.button {
+  min-width: 30px;
+  min-height: 30px;
+  font-family: 'Monserrat';
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: #e73130;
+  background: linear-gradient(90deg, #e73130 0%, #e73130 100%);
+  border: none;
+  border-radius: 100px;
+  box-shadow: 12px 12px 24px #e73130;
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+}
+button::before {
+  content: '';
+  border-radius: 10px;
+  min-width: calc(130px + 10px);
+  min-height: calc(55px + 10px);
+  border: 6px solid #e73130;
+  box-shadow: 0 0 60px #e73130;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+.button:hover, .button:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+button:hover::before, button:focus::before {
+  opacity: 1;
+}
+button::after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 6px solid #e73130;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+button:hover::after, button:focus::after {
+  animation: none;
+  display: none;
+}
+@keyframes ring {
+0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+}
+100% {
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+}
+}
+.titulo {
+  margin-left: 110px;
+}
+.titulo-1 {
+  margin-left: 110px;
+}
+.title {
+  Color: white !important;
+}
+
 /*!***************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-2[0].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2[0].rules[0].use[2]!./Styles/main.scss (1) ***!
   \***************************************************************************************************************************************************************************************/
